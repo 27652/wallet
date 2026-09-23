@@ -12,6 +12,11 @@ add_executable(wallet
     src/Address.cpp
 )
 
+
+target_include_directories(wallet PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
+)
+
 target_include_directories(wallet PRIVATE include)
 
 target_link_libraries(wallet
